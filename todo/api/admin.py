@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+
+# if we want to use created models within the admin panel we have to address them here
+from .models import Note
+admin.site.register(Note)

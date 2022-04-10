@@ -5,5 +5,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # letting api/urls.py handle routes
-    path('', include('api.urls'))
+    path('api/', include('api.urls'))
 ]
